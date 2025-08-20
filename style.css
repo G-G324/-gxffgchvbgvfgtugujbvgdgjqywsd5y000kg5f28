@@ -7,12 +7,42 @@ body {
   line-height: 1.6;
   color: #222;
 
-  /* Modern gradient background with layered effect */
-  background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 40%, #ffffff 80%);
-  background-attachment: fixed; /* keeps gradient stylish while scrolling */
+  /* Bold, modern gradient with black, white, and blue */
+  background: linear-gradient(
+    135deg,
+    #0d0d0d 0%,     /* deep black */
+    #1a1a1a 25%,    /* charcoal */
+    #ffffff 50%,    /* clean white */
+    #4da6ff 75%,    /* modern blue */
+    #000000 100%    /* black fade */
+  );
+  background-attachment: fixed;
 }
 
-/* Hero Section with Blue Accent */
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  color: white;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+.social-links a {
+  margin-left: 1rem;
+  color: #4da6ff; /* blue accent */
+}
+
+/* Hero Section */
 .hero {
   text-align: center;
   padding: 6rem 2rem;
@@ -20,18 +50,46 @@ body {
       rgba(0, 0, 0, 0.6), 
       rgba(0, 0, 0, 0.6)
     ),
-    url('https://www.transparenttextures.com/patterns/cubes.png'); 
+    url('https://www.transparenttextures.com/patterns/cubes.png');
   background-size: cover;
   background-position: center;
   color: white;
 }
-
 .hero h1 {
   font-size: 2.5rem;
   color: #4da6ff; /* Modern blue pop */
 }
-
 .hero p {
   font-size: 1.2rem;
   color: #f0f0f0;
 }
+.cta-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #4da6ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.cta-btn:hover {
+  background: black;
+  transform: scale(1.05); /* Simple hover animation */
+}
+
+/* About Section */
+.about {
+  padding: 2rem;
+  background: #ffffff;
+}
+
+/* Services Section */
+.services {
+  padding: 2rem;
+  background: #f9f9f9;
+}
+.service {
+  margin-bottom: 2rem;
+  border-left: 4px solid #4d
+
