@@ -1,6 +1,6 @@
 # Passing Grade Website
 
-A minimalist blue-themed HTML project with a left-hand tab menu.
+A stylish blue, white, and black-themed HTML project with a left-hand tab menu.
 
 ## Tabs
 
